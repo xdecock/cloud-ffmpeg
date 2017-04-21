@@ -1,0 +1,15 @@
+{
+  "name": "cloud-ffmpeg",
+  "version": "1.0.0",
+  "description": "",
+  "main": "lib/cloud-ffmpeg.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "azure-storage": "^1.4.0",
+    "fluent-ffmpeg": "^2.1.0"
+  }
+}

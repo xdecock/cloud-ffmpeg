@@ -1,0 +1,38 @@
+// Request Sample
+
+{
+  "input": [{
+    "storage": "azure",
+    "path": {
+      "containerName": "videos",
+      "blobName": "nature.mp4",
+    },
+    "ffmpegOptions": [
+    ]
+  }],
+  "output": [{
+    "storage": "azure",
+    "path": {
+      "containerName": "videos",
+      "blobName": "nature2.avi",
+    },
+    "ffmpegOptions": [
+      "-f avi"
+    ]
+  }]
+}
+
+// Response Sample
+
+{
+  "input": [{
+    "name": "",
+    "options": [
+    ]
+  }],
+  "output": [{
+    "name": "",
+    "options": [
+    ]
+  }]
+}
