@@ -11,5 +11,8 @@
   "dependencies": {
     "azure-storage": "^1.4.0",
     "fluent-ffmpeg": "^2.1.0"
+  },
+  "bin": {
+    "cloud-ffmpeg": "./bin/cloud-ffmpeg.js"
   }
 }

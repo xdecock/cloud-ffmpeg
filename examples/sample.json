@@ -1,11 +1,9 @@
-// Request Sample
-
 {
   "input": [{
     "storage": "azure",
     "path": {
       "containerName": "videos",
-      "blobName": "nature.mp4",
+      "blobName": "nature.mp4"
     },
     "ffmpegOptions": [
     ]
@@ -14,25 +12,19 @@
     "storage": "azure",
     "path": {
       "containerName": "videos",
-      "blobName": "nature2.avi",
+      "blobName": "nature2.mp4"
     },
     "ffmpegOptions": [
       "-f avi"
     ]
-  }]
-}
-
-// Response Sample
-
-{
-  "input": [{
-    "name": "",
-    "options": [
-    ]
-  }],
-  "output": [{
-    "name": "",
-    "options": [
+  }, {
+    "storage": "azure",
+    "path": {
+      "containerName": "videos",
+      "blobName": "nature3.mp4"
+    },
+    "ffmpegOptions": [
+      "-f avi"
     ]
   }]
 }
