@@ -3,7 +3,7 @@
     "storage": "azure",
     "path": {
       "containerName": "videos",
-      "blobName": "nature.mp4"
+      "blobName": "sample-Elysium.2013.2160p.mkv"
     },
     "ffmpegOptions": [
     ]
@@ -12,19 +12,131 @@
     "storage": "azure",
     "path": {
       "containerName": "videos",
-      "blobName": "nature2.mp4"
+      "blobName": "nature_256x144.mp4"
     },
     "ffmpegOptions": [
-      "-f avi"
+      "-strict",
+      "-2",
+      "-acodec aac",
+      "-ab 128k",
+      "-ac 2",
+      "-ar 44100",
+      "-vcodec libx264",
+      "-s 256x144",
+      "-b:v 112k",
+      "-minrate 112k",
+      "-maxrate 112k",
+      "-bufsize 112k",
+      "-r 30",
+      "-g 60",
+      "-keyint_min 60",
+      "-sc_threshold 0",
+      "-movflags frag_keyframe+empty_moov",
+      "-f mp4"
     ]
   }, {
     "storage": "azure",
     "path": {
       "containerName": "videos",
-      "blobName": "nature3.mp4"
+      "blobName": "nature_640x360.mp4"
     },
     "ffmpegOptions": [
-      "-f avi"
+      "-strict",
+      "-2",
+      "-acodec aac",
+      "-ab 128k",
+      "-ac 2",
+      "-ar 44100",
+      "-vcodec libx264",
+      "-s 640x360",
+      "-b:v 650k",
+      "-minrate 650k",
+      "-maxrate 650k",
+      "-bufsize 650k",
+      "-r 30",
+      "-g 60",
+      "-keyint_min 60",
+      "-sc_threshold 0",
+      "-movflags frag_keyframe+empty_moov",
+      "-f mp4"
+    ]
+  }, {
+    "storage": "azure",
+    "path": {
+      "containerName": "videos",
+      "blobName": "nature_854x480.mp4"
+    },
+    "ffmpegOptions": [
+      "-strict",
+      "-2",
+      "-acodec aac",
+      "-ab 128k",
+      "-ac 2",
+      "-ar 44100",
+      "-vcodec libx264",
+      "-s 854x480",
+      "-b:v 945k",
+      "-minrate 945k",
+      "-maxrate 945k",
+      "-bufsize 945k",
+      "-r 30",
+      "-g 60",
+      "-keyint_min 60",
+      "-sc_threshold 0",
+      "-movflags frag_keyframe+empty_moov",
+      "-f mp4"
+    ]
+  }, {
+    "storage": "azure",
+    "path": {
+      "containerName": "videos",
+      "blobName": "nature_1280x720.mp4"
+    },
+    "ffmpegOptions": [
+      "-strict",
+      "-2",
+      "-acodec aac",
+      "-ab 128k",
+      "-ac 2",
+      "-ar 44100",
+      "-vcodec libx264",
+      "-s 1280x720",
+      "-b:v 2M",
+      "-minrate 2M",
+      "-maxrate 2M",
+      "-bufsize 2M",
+      "-r 30",
+      "-g 60",
+      "-keyint_min 60",
+      "-sc_threshold 0",
+      "-movflags frag_keyframe+empty_moov",
+      "-f mp4"
+    ]
+  }, {
+    "storage": "azure",
+    "path": {
+      "containerName": "videos",
+      "blobName": "nature_1920x1080.mp4"
+    },
+    "ffmpegOptions": [
+      "-strict",
+      "-2",
+      "-acodec aac",
+      "-ab 145k",
+      "-ac 2",
+      "-ar 44100",
+      "-vcodec libx264",
+      "-s 1920x1080",
+      "-b:v 4M",
+      "-minrate 4M",
+      "-maxrate 4M",
+      "-bufsize 4M",
+      "-r 30",
+      "-g 60",
+      "-keyint_min 60",
+      "-sc_threshold 0",
+      "-movflags frag_keyframe+empty_moov",
+      "-f mp4"
     ]
   }]
 }
