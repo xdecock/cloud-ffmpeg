@@ -29,6 +29,10 @@ const data = {
   }]
 };
 
-const CloudFFmpeg = require('./lib/cloud-ffmpeg');
+const CloudFFmpeg = require('../lib/cloud-ffmpeg');
 
-let cloudFFmpeg = new CloudFFmpeg(data);
+let cloudFFmpeg = new CloudFFmpeg();
+cloudFFmpeg.run(data).then((responses) => {
+    console.log("Everything works well.");
+    console.log(responses);
+});
