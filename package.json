@@ -10,7 +10,10 @@
   "license": "MIT",
   "dependencies": {
     "azure-storage": "^1.4.0",
-    "fluent-ffmpeg": "^2.1.0"
+    "fluent-ffmpeg": "^2.1.0",
+    "lodash": "^4.17.4",
+    "node-uuid": "^1.4.8",
+    "uuid": "^3.0.1"
   },
   "bin": {
     "cloud-ffmpeg": "./bin/cloud-ffmpeg.js"
