@@ -1,6 +1,6 @@
 {
   "name": "cloud-ffmpeg",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "",
   "main": "lib/cloud-ffmpeg.js",
   "scripts": {
@@ -17,6 +17,6 @@
     "uuid": "^3.0.1"
   },
   "bin": {
-    "cloud-ffmpeg": "./bin/cloud-ffmpeg.js"
+    "cloud-ffmpeg": "./bin/cloud-ffmpeg"
   }
 }
