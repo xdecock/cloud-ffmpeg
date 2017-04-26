@@ -1,22 +1,26 @@
 #!/usr/bin/env node
 
+const program = require('commander');
+
 const fs = require('fs');
 const CloudFFmpeg = require('../lib/cloud-ffmpeg');
 
-const args = process.argv.slice(2);
+program
+    .option(
+        '-t, --temp-path [path]',
+        'local path for temporarily saving ffmpeg output. defaults to /tmp/',
+        '/tmp/'
+    )
+    .option('-d, --data-path <path>', 'json-formatted data path')
+    .parse(process.argv);
 
-const getData = (args) => {
-  if (args.length === 1) {
-    const dataPath = args[0];
-    const json = fs.readFileSync(dataPath);
-    return JSON.parse(json);
-  }
-  return undefined;
+const config = {
+  tempPath: program.tempPath
 };
+const json = fs.readFileSync(program.dataPath);
+const data = JSON.parse(json);
 
-const data = getData(args);
-
-const cloudFFmpeg = new CloudFFmpeg();
+const cloudFFmpeg = new CloudFFmpeg(config);
 cloudFFmpeg.run(data).then((responses) => {
   console.log("Everything works well.");
   console.log(responses);
