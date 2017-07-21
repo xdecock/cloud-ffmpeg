@@ -1,18 +1,18 @@
 {
   "task": "ffmpeg",
   "input": [{
-    "storage": "azure",
+    "storage": "local",
     "path": {
-      "location": "videos",
+      "location": "/home/user/",
       "targetName": "sample.mkv"
     },
     "ffmpegOptions": [
     ]
   }],
   "output": [{
-    "storage": "azure",
+    "storage": "local",
     "path": {
-      "location": "output",
+      "location": "/home/user/videos/",
       "targetName": "sample_256x144.mp4"
     },
     "ffmpegOptions": [
@@ -35,9 +35,9 @@
       "-f mp4"
     ]
   }, {
-    "storage": "azure",
+    "storage": "local",
     "path": {
-      "location": "output",
+      "location": "/home/user/videos/",
       "targetName": "sample_640x360.mp4"
     },
     "ffmpegOptions": [
