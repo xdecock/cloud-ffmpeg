@@ -11,5 +11,4 @@ const config = {
 const cloudFFmpeg = new CloudFFmpeg(config);
 cloudFFmpeg.run(data).then((responses) => {
     console.log("Everything works well.");
-    console.log(responses);
 });

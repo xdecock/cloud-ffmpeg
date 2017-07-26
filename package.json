@@ -1,7 +1,7 @@
 {
   "name": "cloud-ffmpeg",
-  "version": "1.0.2",
-  "description": "",
+  "version": "1.0.3",
+  "description": "A node.js module intended to serve as a pipeline to ffmpeg, supporting various storages",
   "main": "lib/cloud-ffmpeg.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -14,10 +14,10 @@
     "fluent-ffmpeg": "^2.1.0",
     "fs-extra": "^4.0.0",
     "lodash": "^4.17.4",
-    "node-uuid": "^1.4.8",
     "uuid": "^3.0.1"
   },
   "bin": {
     "cloud-ffmpeg": "./bin/cloud-ffmpeg"
-  }
+  },
+  "repository": "tntcrowd/cloud-ffmpeg"
 }
