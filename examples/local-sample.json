@@ -3,7 +3,7 @@
   "input": [{
     "storage": "local",
     "path": {
-      "location": "/home/user/",
+      "location": "/home/jongho/videos/",
       "targetName": "sample.mkv"
     },
     "ffmpegOptions": [
@@ -12,7 +12,7 @@
   "output": [{
     "storage": "local",
     "path": {
-      "location": "/home/user/videos/",
+      "location": "/home/jongho/videos/",
       "targetName": "sample_256x144.mp4"
     },
     "ffmpegOptions": [
@@ -37,7 +37,7 @@
   }, {
     "storage": "local",
     "path": {
-      "location": "/home/user/videos/",
+      "location": "/home/jongho/videos/",
       "targetName": "sample_640x360.mp4"
     },
     "ffmpegOptions": [
