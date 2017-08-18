@@ -53,6 +53,15 @@ To execute, in any shell or terminal emulator:
     cloud-ffmpeg -t /path/to/tmp/dir -d /path/to/data-file.json
     
 
+Dockerfile
+-----------------
+
+Dockerfile to build Docker image is included in this repository. The image is
+based on Alpine Linux 3.4 and includes FFmpeg v3.3.3 and node.js v6.11.2 and 
+necessary dependencies to build them. For build instructions, refer to 
+[Dockerfile reference](https://docs.docker.com/engine/reference/builder/) from 
+the Docker docs.
+
 
 License
 -------
