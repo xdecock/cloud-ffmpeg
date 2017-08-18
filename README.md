@@ -1,4 +1,4 @@
-Cloud FFMPEG
+Cloud FFmpeg
 ====================================
 
 `cloud-ffmpeg` is a Node.js module intended to serve as a pipeline to `FFMPEG` 
