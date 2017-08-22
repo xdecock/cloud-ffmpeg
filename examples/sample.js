@@ -1,7 +1,7 @@
 const CloudFFmpeg = require('../lib/cloud-ffmpeg');
 const fs = require('fs');
 
-const json = fs.readFileSync('./local-sample.json');
+const json = fs.readFileSync('./sample.json');
 const data = JSON.parse(json);
 
 const config = {
