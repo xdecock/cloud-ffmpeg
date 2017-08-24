@@ -1,6 +1,6 @@
 {
   "name": "cloud-ffmpeg",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "A node.js module intended to serve as a pipeline to ffmpeg, supporting various storages",
   "main": "lib/cloud-ffmpeg.js",
   "scripts": {
